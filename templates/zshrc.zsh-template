@@ -1,3 +1,6 @@
+# Automatically start a tmux session upon logging in. 
+ZSH_TMUX_AUTOSTART="true"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -59,7 +62,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git docker autojump extract textmate
+  zsh-syntax-highlighting zsh-autosuggestions
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
